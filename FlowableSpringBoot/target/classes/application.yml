@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://tidb-dev.paas.ecoweather.cn:4000/iot_flowable_dev?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    username: iot_dev
+    password: 5rdmj9gZFp1x0lJl
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 4
+      auto-commit: false
+      connection-timeout: 30000
+      idle-timeout: 60000
+      max-lifetime: 180000
+      readOnly: false
+flowable:
+  async-executor-activate: false
+  database-schema-update: true
+  idm:
+    enabled: false
+    servlet:
+      load-on-startup: -1
+      name: Flowable IDM Rest API # IDM servlet的名字。'
+      path: /idm-api # IDM servlet的context path。'
+    ldap:
+      enabled: false
+server:
+  port: 8082
