@@ -26,3 +26,4 @@ nbdist/
 log/
 
 .flattened-pom.xml
+/.idea/
