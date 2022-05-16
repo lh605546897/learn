@@ -1,0 +1,8 @@
+
+spring:
+  application:
+    name: netty-tester
+  profiles:
+    active: dev
+server:
+  port: 8081

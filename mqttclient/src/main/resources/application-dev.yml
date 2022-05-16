@@ -1,0 +1,20 @@
+netty:
+  #host: mqtt-broker-device.dev.svc.cluster.local #开发连接
+  #host: mqtt-broker-app.dev.svc.cluster.local  #开发订阅
+  host: localhost
+  port: 1883 #client 1883  ：  app 3883
+  keepAliveSecond: 120   # 120 ：50
+  restapi:
+    url: http://zuul-inner-gateway.dev.svc.cluster.local:8889/api/v1
+topic:
+  topic-welcome-start: rsp/welcome
+  topic-cmdstart: cmd
+  topic-ctl-start: ctl
+  topic-data-start: data
+  topic-error: $error
+  topic-proxy-notify-start: rsp/proxy/notify
+data:
+#  stream: airH
+  deviceKey: GOon3xV7uk
+  deviceToken: OZOi17s6FOp4euo
+  stream: airT
