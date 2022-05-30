@@ -1,0 +1,10 @@
+
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: mqtt-client
+  profiles:
+    active: dev
+server:
+  port: 8081
